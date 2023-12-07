@@ -54,22 +54,35 @@ table {
 }
 .title1{
     font-size: 55px;
-}
-.buttonOnOff {
+}.buttonContainer {
     display: flex;
-    justify-content: space-around;
-    gap: 25px;
-}
-.buttonOn, .buttonOff {
-    display: flex;    
     align-items: center;
 }
+.button{
+    background-color: yellow;
+    border-radius: 50%;
+}
+
+.toggleButton {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 35px;
+    width: 150px;
+    background-color: white; 
+    cursor: pointer;
+}
+
 .containerSection{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 900px;
     padding: 40px 250px 40px 250px;
+}
+.article {
+    display: flex;
+    justify-content: center;
 }
 .text{
     font-size: 20px;
@@ -79,3 +92,28 @@ table {
     font-size: 70px;
     padding: 10px 25px 55px 25px;
 }
+.darkMode .textBody, .darkMode .containerHeader, .darkMode .article, .darkMode .section {
+    background-color: black;
+    color: #fff;
+}
+
+
+.darkMode img{
+    border: 2px solid #000;
+}
+
+.darkMode .toggleButton {
+    display: flex;
+    justify-content: end;
+    background-color:grey; 
+    color: #333; 
+
+}
+
+.darkMode .button{
+    background-color: rgb(95, 95, 225);
+    
+}
+.darkMode .title1, .darkMode .title2{
+    color: yellow;
+} 
